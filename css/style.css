@@ -548,50 +548,187 @@ a:hover {
     width: 640px;
     height: 380px;
     height: auto;
-    /* position: relative; */
 }
-/* .lake-block__item-2::before {
-    position: absolute;
-    content: url(../img/lake/start.svg);
-    top: 50%;
-    left: 50%;
-    width: 60px;
-    height: 60px;
-    transform: translate(-30px, -30px);
-    -webkit-transform: translate(-30px, -30px);
-    -moz-transform: translate(-30px, -30px);
-    -ms-transform: translate(-30px, -30px);
-    -o-transform: translate(-30px, -30px);
-} */
+
 .lake-video {
     object-fit: cover;
     height: 100%;
     cursor: pointer;
     z-index: 1;
 }
-/* .lake-image{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60px;
-    height: 60px;
+
+/* ========== lake / ========== */
+
+/* ========== gallery ========== */
+.gallery {
+    background: #F2F9FE;
+    padding: 44px 0 80px;
+}
+.gallery-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11px;
+}
+.gallery-top a {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #0050B2;
+    -moz-text-decoration-line: underline;
+    margin-right: 160px;
+}
+.slider {
+    margin-top: 59px;
+}
+.slider-item {
+    overflow: hidden;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.slider-item img {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.slider-item img {
+    margin: 0 auto;
+} 
+.gallery-a-mobil {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #0050B2;
+    -moz-text-decoration-line: underline;
+    text-align: center;
+}
+.gallery-a-mobil {
+    display: none;
+}
+ /* ==== перебеваем стили с корообки ======  */
+ .slick-prev {
+    left: auto;
+    right: 74px;
+    border: 1px solid #0061D9;
+    border-radius: 50%;
+    padding: 3px;
+    width: 44px;
+    height: 44px;
     
-    transform: translate(-30px, -30px);
-    -webkit-transform: translate(-30px, -30px);
-    -moz-transform: translate(-30px, -30px);
-    -ms-transform: translate(-30px, -30px);
-    -o-transform: translate(-30px, -30px);
-} */
+}
+.slick-next {
+    right: 11px;
+    border: 1px solid #0061D9;
+    border-radius: 50%;
+    padding: 3px;
+    width: 44px;
+    height: 44px;
+}
 
+.slick-prev, .slick-next {
+    top: -79px;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 21px;
+    line-height: 1;
+    opacity: .75;
+    color: #0061D9;
+}
+.slick-prev:before {
+    content: url(../img/gallery/arrow-left.svg);
 
-/* .lake-video {
-    position: absolute;
+}
+.slick-next:before {
+    content: url(../img/gallery/arrow-right.svg);
+}
+.slick-dots li button:before {
+    font-size: 20px;
+    line-height: 20px;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%
-} */
-/* ========== lake / ========== */
+    width: 20px;
+    height: 20px;
+
+    opacity: .25;
+    color: #0061D9;
+}
+.slick-dots {
+    bottom: -50px;
+}
+.slick-initialized .slick-slide {
+    margin: 0 11px;
+}
+/* ========== gallery / ========== */
+
+/* ========== recreation / ========== */
+.recreation {
+    padding: 80px 0 0px;
+}
+.recreation h2 {
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.recreation-block {
+    display: flex;
+    margin-bottom: 54px;
+}
+.recreation__item-img {
+    min-width: 256px;
+    margin-right: 126px;
+    position: relative;
+}
+.recreation-abs {
+    position: absolute;
+    top: 145px;
+    left: 90px;
+}
+.recreation__item-text {
+    max-width: 736px;
+}
+.recreation__item-text p {
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #333333;
+}
+/* ========== recreation / ========== */
+
+/* ========== benefitss  ========== */
+
+.benefitss-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 41px 0 85px;
+}
+.benefitss__item h2 {
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 130%;
+    color: #64BD22;
+}
+.benefitss__item h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+}
+/* ========== benefitss / ========== */
 
 
 
@@ -701,7 +838,21 @@ a:hover {
     .header-contakts__item {
         display: none;
     }
-
+    .recreation {
+        padding: 50px 0 0px;
+    }
+    .recreation h2 {
+        margin-bottom: 20px;
+    }
+    .recreation__item-img {
+        display: none;
+    }
+    .recreation__item-text {
+       max-width: 100%;
+    }
+    .benefitss-block {
+        padding: 41px 0 50px;
+    }
 }
 /* ====== Медиа 1070px /====== */
 
@@ -745,6 +896,17 @@ a:hover {
     .main h1 {
         margin: 45px 0 8px;
         font-size: 64px;
+        line-height: 130%;
+    }
+    .benefitss__item h2 {
+        font-size: 44px;
+    }
+    .benefitss__item {
+        width: 140px;
+    }
+    .benefitss__item h3 {
+        font-weight: 500;
+        font-size: 16px;
         line-height: 130%;
     }
 }
@@ -819,7 +981,17 @@ a:hover {
         grid-column: 1 / 2;
         grid-row: 13 / 14;
     }
-
+    .gallery-a-desk {
+        display: none;
+    }
+    .gallery-a-mobil {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    } 
+    .recreation h2 {
+        font-size: 8vw;
+    }
 }
 /* ====== Медиа 600px /====== */
 
@@ -863,7 +1035,22 @@ a:hover {
         margin: 0 auto;
         width: 80%;
     }
-
+    .gallery {
+        padding: 44px 0 37px;
+    }
+    .slider {
+        margin-top: 25px;
+    }
+    .slick-prev, .slick-next {
+        top: -44px;
+    }
+    .slick-initialized .slick-slide {
+        margin: 0;
+    }
+    .slider-item img {
+        width: 100%;
+        object-fit: cover;
+    }
 
 }
 /* ====== Медиа 450px /====== */
@@ -871,7 +1058,7 @@ a:hover {
 /* ====== Медиа 400px ====== */
 @media (max-width: 400px) {
     .global-h2 {
-        font-size: 8vw;
+        font-size: 7vw;
     }
     .popular-block {
         gap: 11px;
